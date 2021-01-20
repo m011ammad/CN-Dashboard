@@ -1,0 +1,68 @@
+@media (max-width: 991.98px) {
+    .right-side-block {
+        right: -250px;
+        /* display: none; */
+    }
+    
+    .right-side-block.is-active {
+        /* display: block; */
+        right: 0;
+    }
+    
+    .right-side-block .header__logo {
+        margin-right: 15px !important;
+    }
+    
+    .left-side-block {
+        margin-right: 0 !important;
+    }
+    
+    .bars {
+        display: flex !important;
+    }
+    
+    .right-side-block.is-active ul li a::before {
+        right: 15px;
+    }
+    
+    .right-side-block ul li.is-active a {
+        color: #2b4a83 !important;
+        background-color: #eef2f8 !important;
+    }
+    
+    .right-side-block ul li a:hover {
+        background-color: #eef2f8 !important;
+        transition: background-color 200ms ease;
+    }
+    
+    .right-side-block.is-active .profile-block {
+        width: 122px;
+        height: 122px;
+        position: unset;
+        margin-bottom: 50px;
+    }
+    
+    .right-side-block.is-active .profile__name {
+        display: block
+    }
+    
+    .right-side-block.is-active ul {
+        margin-top: unset;
+    }
+    
+    .right-side-block.is-active .profile__camera.default__avatar {
+        top: 76%
+    }
+    
+    .profile-block:hover .profile__camera::before {
+        top: 50% !important;
+    }
+    
+    .right-side-block.is-active .profile__camera::before {
+        width: 20px;
+        height: 20px;
+        right: 40.5%;
+        top: 3px;
+    }
+    
+}
