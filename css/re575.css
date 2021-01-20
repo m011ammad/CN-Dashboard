@@ -1,0 +1,21 @@
+@media (max-width: 575.98px) {
+    .right-side-block span.bars{
+        display: block;
+    }
+    .text{
+        width: 100%;
+    }
+    .right-side-block .header__logo {
+        display: block;
+    }
+    .multi-text{
+        display: unset;
+        margin: 0;
+    }
+    .t-header-search{
+        width: 100%;
+    }
+    .jh50 h2{
+        font-size: 22px;
+    }
+}
