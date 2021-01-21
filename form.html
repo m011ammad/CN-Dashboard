@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <title>داشبورد</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css-comps.css">
+    <link rel="stylesheet" href="css/re575.css">
+    <link rel="stylesheet" href="css/re768.css">
+    <link rel="stylesheet" href="css/re991.css">
+    <link rel="stylesheet" href="css/re1200.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|
+    Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="right-side-block">
+    <aside>
+        <span class="material-icons material-icons-outlined bars">menu</span>
+        <div class="profile-block">
+            <div class="profile__img">
+                <img src="img/profile-image.jpg">
+            </div>
+            <span class="profile__name">محمد سجادی</span>
+            <span class="profile__skill">Front-End Developer</span>
+        </div>
+        <br>
+        <ul>
+            <li><a href="index.html"><span class="material-icons material-icons-outlined ic">dashboard</span>در یک نگاه</a></li>
+            <li><a href="table.html"><span class="material-icons material-icons-outlined ic">table_view</span>جدول‌ها</a></li>
+            <li class="is-active"><a href="form.html"><span class="material-icons material-icons-outlined ic">dynamic_form</span>فرم‌ها</a></li>
+            <li><a href="setting.html"><span class="material-icons material-icons-outlined ic">account_circle</span>حساب کاربری</a></li>
+        </ul>
+    </aside>
+    <p class="copy-right"><a href="#">RTL-Dashboard version 1.0 &copy;</a></p>
+</div>
+
+<div class="left-side-block">
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 header-block">
+                    <div class="header__right">
+                        <a href="#" class="menu-icon bars">
+                            <div class="material-icons md-24 material-icons-outlined">menu</div>
+                        </a>
+                        <h1 class="logo">داشبورد فارسی</h1>
+                    </div>
+                    <div class="header__left">
+                        
+                        <div class="header__search d-none d-lg-block ml-4">
+                            <input type="search" placeholder="جستجو:" />
+                            <button>
+                                <span class="material-icons material-icons-outlined">search</span>
+                            </button>
+                        </div>
+                        
+                        <div class="notification">
+                            <a href="">
+                                <span class="material-icons material-icons-outlined notif__icon">notifications</span>
+                            </a>
+                        </div>
+                        <a href="">
+                            <span class="material-icons material-icons-outlined" title="خروج از حساب کاربری">exit_to_app</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 d-lg-none">
+                <div class="col-12">
+                    <div class="header__search">
+                        <input type="search" placeholder="جستجو:" />
+                        <button>
+                            <span class="material-icons material-icons-outlined">search</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container-fluid main-content">
+        <div class="row">
+            <div class="col-12 form-max-width my-4">
+                <div class="section-info">
+                    <span class="material-icons material-icons-outlined">info</span>
+                    فرم یک ستونه
+                </div>
+                <form action="">
+                    <br>
+                    <h2>اطلاعات فردی</h2>
+                    <br>
+                    <div class="row">
+    
+                        <div class="input-block col-6">
+                            <label class="input-help text-right margin-bottom-12" >
+                                نام و نام‌خانوادگی
+                            </label>
+                            <input class="text" placeholder="نام کاربری" value="محمد سجادی">
+                        </div>
+    
+                        <div class="input-block col-6">
+                            <label class="input-help text-right margin-bottom-12" >
+                                جنسیت
+                            </label>
+                            <select  placeholder="نام کاربری" value="محمد سجادی">
+                                <option value="man">مرد</option>
+                                <option value="woman">زن</option>
+                            </select>
+                        </div>
+    
+                        <div class="input-block col-6">
+                            <label class="input-help text-right margin-bottom-12" >
+                                ایمیل
+                            </label>
+                            <input class="text text-left" placeholder="ایمیل" value="mohammadsjh@gmail.com">
+                        </div>
+    
+                        <div class="input-block col-6">
+                            <label class="input-help text-right margin-bottom-12">
+                                شماره تماس
+                            </label>
+                            <input class="text text-left" placeholder="شماره تماس" value="09186304616">
+                        </div>
+    
+                        <div class="input-block col-6">
+                            <label class="input-help text-right margin-bottom-12" >
+                                استان
+                            </label>
+                            <select  placeholder="استان" value="">
+                                <option value="">مرکزی</option>
+                                <option value="">تهران</option>
+                                <option value="">آذربایجان شرقی</option>
+                                <option value="">آذربایجان غربی</option>
+                                <option value="">زنجان</option>
+                                <option value="">اصفهان</option>
+                            </select>
+                        </div>
+    
+                        <div class="input-block col-6">
+                            <label class="input-help text-right margin-bottom-12" >
+                                شهر
+                            </label>
+                            <select  placeholder="شهر" value="">
+                                <option value="">اراک</option>
+                                <option value="">خنداب</option>
+                                <option value="">محلات</option>
+                                <option value="">شازند</option>
+                                <option value="">خمین</option>
+                                <option value="">مهاجران</option>
+                            </select>
+                        </div>
+    
+                        <div class="input-block col-12 mt-4">
+                            <label class="input-help text-right margin-bottom-12" >
+                                درباره من
+                            </label>
+                            <textarea class="text" placeholder="مختصری درباره خود بنویسید:" value="محمد سجادی"></textarea>
+                        </div>
+    
+                        <div class="input-block col-6">
+    
+                        </div>
+    
+                    </div>
+
+                    <br>
+                    <br>
+                    <button class="jf-button margin-left-right-auto jf-button-design">ذخیره اطلاعات</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</html>
