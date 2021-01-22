@@ -140,6 +140,9 @@ select{
     text-align: center;
     padding-top: 7px;
 }
+.pagination-item:hover{
+    background-color: var(--jf-white-hover);
+}
 
 /* tab box */
 .tab__box{
