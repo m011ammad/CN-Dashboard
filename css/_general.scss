@@ -3,23 +3,25 @@
     src: url('fonts/Vazir.woff2') format('woff2');
     font-weight: normal;
 }
-:root{
-    --jf-primary-color: #FF8552;
-    --jf-primary-color-hover: #fa682a;
-    --jf-secondary-color: #297373;
-    --jf-secondary-color-hover: #256666;
-    --jf-success: #02a533;
-    --jf-error: #f00;
-    --jf-white: #f4f4f4;
-    --jf-white-hover: #fff;
-    --jf-black: #555;
-    --jf-black-hover: #333;
-    --jf-bg-one: #F4F4FC;
-    --jf-bg-two: #E9ECF5;
-    --jf-border: 2px solid #ccc;
-    --jf-border-focus: 1px solid #555;
-    --jf-border-radius: 10px;
-}
+// ! variables
+$primary-color: #FF8552;
+$primary-color-hover: #fa682a;
+$secondary-color: #297373;
+$secondary-color-hover: #256666;
+$success-color: #02a533;
+$error-color: #f00;
+$text-l: #f5f5f5;
+$text-l-hover: #fff;
+$text-d: #555;
+$text-d-hover: #333;
+$bg-l: #f4f4f4;
+$bg-l-hover: #fff;
+$bg-d: #555;
+$bg-d-hover: #333;
+$border: 1px solid #ccc;
+$border-radius: 10px;
+$shadow: 0px 2px 3px #ccc;
+
 *{
     padding: 0;
     margin: 0;
@@ -36,12 +38,12 @@ body, html{
     direction: rtl;
 }
 body{
-    background: var(--jf-bg-one);
-    color: var(--jf-black);
+    background-color: $bg-l;
+    color: $text-d;
 }
 a, a:active, a:focus, a:visited{
     text-decoration: none;
-    color: var(--jf-black);
+    color: $text-d;
 }
 ul li{
     list-style: none;
@@ -94,11 +96,11 @@ hr{
     white-space: nowrap;
 }
 .right-side-block ul li.is-active {
-    background-color: var(--jf-white-hover);
-    border-left: 5px solid var(--jf-primary-color);
+    background-color: $bg-l-hover;
+    border-left: 5px solid $primary-color;
 }
 .right-side-block ul li:hover{
-    background-color: var(--jf-white-hover);
+    background-color: $bg-l-hover;
     transition: background-color 200ms ease;
 }
 .right-side-block.is-active .ic{
@@ -279,7 +281,7 @@ hr{
 }
 /* ! header */
 .header{
-    border-bottom: var(--jf-border);
+    border-bottom: $border;
 }
 .header-block{
     display: flex;
@@ -306,7 +308,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: var(--jf-border);
+    border: $border;
     border-radius: 5px;
     width: 35px;
     height: 35px;
@@ -328,8 +330,8 @@ hr{
     align-items: center;
 }
 .header__search input{
-    border: var(--jf-border);
-    border-radius: var(--jf-border-radius);
+    border: $border;
+    border-radius: $border-radius;
     padding: 3px 35px 3px 10px;
     background-color: transparent;
     width: 100%;
@@ -350,9 +352,9 @@ hr{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--jf-primary-color);
+    background-color: $primary-color;
     position: absolute;
-    border: 2px solid var(--jf-bg-one);
+    border: 2px solid $text-l;
     top: 0;
     right: -2px;
 }
@@ -368,11 +370,11 @@ hr{
 .banner-type-one{
     padding: 25px 15px;
     position: relative;
-    background-color: var(--jf-secondary-color);
+    background-color: $secondary-color;
     border-radius: 10px;
 }
 .banner-type-one *{
-    color: var(--jf-white);
+    color: $bg-l;
 }
 .banner-type-one__button{
     padding: 5px 15px;
@@ -380,15 +382,15 @@ hr{
     margin-top: 10px;
 }
 .banner-type-one__button:hover{
-    color: var(--jf-white-hover);
+    color: $bg-l-hover;
 }
 .banner-type-one__button--accept{
-    background-color: var(--jf-primary-color);
-    border: 1px solid var(--jf-primary-color);
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
 }
 .banner-type-one__button--reject{
     background-color: transparent;
-    border: 1px solid var(--jf-white);
+    border: 1px solid $bg-l;
 }
 /* ! top cards */
 .top-card{
@@ -399,8 +401,8 @@ hr{
     font-size: 28px;
     font-weight: bold;
     border-radius: 5px;
-    background-color: var(--jf-primary-color);
-    color: var(--jf-white);
+    background-color: $primary-color;
+    color: $bg-l;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,21 +422,21 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: var(--jf-border-radius);
+    border-radius: $border-radius;
 }
 .banner-type-two h2{
     font-size: 28px;
-    color: var(--jf-white);
+    color: $bg-l;
     text-align: center;
     display: block;
-    background-color: var(--jf-black);
+    background-color: $bg-d;
     padding: 5px 20px;
     border-radius: 10px;
 }
 .banner-type-two button{
     padding: 5px 10px;
-    background-color: var(--jf-primary-color);
-    color: var(--jf-white);
+    background-color: $primary-color;
+    color: $bg-l;
     margin-top: 20px;
     border-radius: 10px;
 }

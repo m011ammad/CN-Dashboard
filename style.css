@@ -3512,24 +3512,6 @@ html {
   font-weight: normal;
 }
 
-:root {
-  --jf-primary-color: #FF8552;
-  --jf-primary-color-hover: #fa682a;
-  --jf-secondary-color: #297373;
-  --jf-secondary-color-hover: #256666;
-  --jf-success: #02a533;
-  --jf-error: #f00;
-  --jf-white: #f4f4f4;
-  --jf-white-hover: #fff;
-  --jf-black: #555;
-  --jf-black-hover: #333;
-  --jf-bg-one: #F4F4FC;
-  --jf-bg-two: #E9ECF5;
-  --jf-border: 2px solid #ccc;
-  --jf-border-focus: 1px solid #555;
-  --jf-border-radius: 10px;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -3545,13 +3527,13 @@ body, html {
 }
 
 body {
-  background: var(--jf-bg-one);
-  color: var(--jf-black);
+  background-color: #f4f4f4;
+  color: #555;
 }
 
 a, a:active, a:focus, a:visited {
   text-decoration: none;
-  color: var(--jf-black);
+  color: #555;
 }
 
 ul li {
@@ -3612,12 +3594,12 @@ hr {
 }
 
 .right-side-block ul li.is-active {
-  background-color: var(--jf-white-hover);
-  border-left: 5px solid var(--jf-primary-color);
+  background-color: #fff;
+  border-left: 5px solid #FF8552;
 }
 
 .right-side-block ul li:hover {
-  background-color: var(--jf-white-hover);
+  background-color: #fff;
   transition: background-color 200ms ease;
 }
 
@@ -3802,7 +3784,7 @@ hr {
 
 /* ! header */
 .header {
-  border-bottom: var(--jf-border);
+  border-bottom: 1px solid #ccc;
 }
 
 .header-block {
@@ -3833,7 +3815,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: var(--jf-border);
+  border: 1px solid #ccc;
   border-radius: 5px;
   width: 35px;
   height: 35px;
@@ -3859,8 +3841,8 @@ hr {
 }
 
 .header__search input {
-  border: var(--jf-border);
-  border-radius: var(--jf-border-radius);
+  border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 3px 35px 3px 10px;
   background-color: transparent;
   width: 100%;
@@ -3884,9 +3866,9 @@ hr {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--jf-primary-color);
+  background-color: #FF8552;
   position: absolute;
-  border: 2px solid var(--jf-bg-one);
+  border: 2px solid #f5f5f5;
   top: 0;
   right: -2px;
 }
@@ -3903,12 +3885,12 @@ hr {
 .banner-type-one {
   padding: 25px 15px;
   position: relative;
-  background-color: var(--jf-secondary-color);
+  background-color: #297373;
   border-radius: 10px;
 }
 
 .banner-type-one * {
-  color: var(--jf-white);
+  color: #f4f4f4;
 }
 
 .banner-type-one__button {
@@ -3918,17 +3900,17 @@ hr {
 }
 
 .banner-type-one__button:hover {
-  color: var(--jf-white-hover);
+  color: #fff;
 }
 
 .banner-type-one__button--accept {
-  background-color: var(--jf-primary-color);
-  border: 1px solid var(--jf-primary-color);
+  background-color: #FF8552;
+  border: 1px solid #FF8552;
 }
 
 .banner-type-one__button--reject {
   background-color: transparent;
-  border: 1px solid var(--jf-white);
+  border: 1px solid #f4f4f4;
 }
 
 /* ! top cards */
@@ -3941,8 +3923,8 @@ hr {
   font-size: 28px;
   font-weight: bold;
   border-radius: 5px;
-  background-color: var(--jf-primary-color);
-  color: var(--jf-white);
+  background-color: #FF8552;
+  color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3964,23 +3946,23 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: var(--jf-border-radius);
+  border-radius: 10px;
 }
 
 .banner-type-two h2 {
   font-size: 28px;
-  color: var(--jf-white);
+  color: #f4f4f4;
   text-align: center;
   display: block;
-  background-color: var(--jf-black);
+  background-color: #555;
   padding: 5px 20px;
   border-radius: 10px;
 }
 
 .banner-type-two button {
   padding: 5px 10px;
-  background-color: var(--jf-primary-color);
-  color: var(--jf-white);
+  background-color: #FF8552;
+  color: #f4f4f4;
   margin-top: 20px;
   border-radius: 10px;
 }
@@ -4006,15 +3988,15 @@ hr {
   font-size: 20px;
   top: 14px;
   right: 15px;
-  color: var(--jf-black);
+  color: #555;
   user-select: none;
 }
 
 /* ----- box */
 .jf-box {
   padding: 10px;
-  border: var(--jf-border);
-  border-radius: var(--jf-border-radius);
+  border: 1px solid #ccc;
+  border-radius: 10px;
   height: 100%;
 }
 
@@ -4035,14 +4017,14 @@ hr {
   cursor: pointer;
   display: block;
   font-size: 18px;
-  background-color: var(--jf-primary-color) !important;
-  color: var(--jf-white-hover);
+  background-color: #FF8552 !important;
+  color: #fff;
   margin-right: auto;
   margin-left: auto;
 }
 
 .jf-button:hover {
-  background-color: var(--jf-primary-color-hover) !important;
+  background-color: #fa682a !important;
   transition: background-color 200ms;
 }
 
@@ -4053,10 +4035,10 @@ hr {
   margin-left: auto;
   display: block;
   padding: 0 12px;
-  border-radius: var(--jf-border-radius);
+  border-radius: 10px;
   height: 42px;
   line-height: 40px;
-  border: var(--jf-border);
+  border: 1px solid #ccc;
   margin-bottom: 15px;
   text-align: right;
   font-size: 16px !important;
@@ -4066,8 +4048,8 @@ textarea {
   resize: none;
   padding: 12px;
   margin-bottom: 15px;
-  border: var(--jf-border);
-  border-radius: var(--jf-border-radius);
+  border: 1px solid #ccc;
+  border-radius: 10px;
   width: 100%;
   height: 150px !important;
   font-family: Vazir;
@@ -4077,12 +4059,12 @@ textarea {
 select {
   width: 100%;
   padding: 10px;
-  border-radius: var(--jf-border-radius);
+  border-radius: 10px;
 }
 
 /* ----- tables */
 .table {
-  background: var(--jf-white-hover);
+  background-color: #fff;
   padding: 20px;
   text-align: center;
   border-collapse: collapse;
@@ -4096,20 +4078,20 @@ select {
 }
 
 .table .title-row {
-  background-color: var(--jf-white);
+  background-color: #f4f4f4;
   height: 50px;
   font-size: 14px;
 }
 
 .table td {
   white-space: nowrap;
-  color: var(--jf-black);
+  color: #555;
   padding: 10px 20px;
   font-size: 14px;
 }
 
 .table td, table th {
-  border-bottom: var(--jf-border);
+  border-bottom: 1px solid #ccc;
 }
 
 /* pagination */
@@ -4123,23 +4105,23 @@ select {
 .pagination-item {
   min-width: 40px;
   height: 40px;
-  background-color: var(--jf-white);
+  background-color: #f4f4f4;
   box-shadow: 0px 1px 2px #aaa;
-  border-radius: var(--jf-border-radius);
+  border-radius: 10px;
   margin: 0px 10px;
   text-align: center;
   padding-top: 7px;
 }
 
 .pagination-item:hover {
-  background-color: var(--jf-white-hover);
+  background-color: #fff;
 }
 
 /* tab box */
 .tab__box {
   background: #fff;
   margin-bottom: 20px;
-  border-radius: var(--jf-border-radius);
+  border-radius: 10px;
 }
 
 .tab__box .tab__items {
@@ -4157,7 +4139,7 @@ select {
 
 .tab__box .tab__item.is-active {
   border-radius: 10px;
-  background-color: var(--jf-primary-color);
+  background-color: #FF8552;
   text-align: center;
   color: #fff;
 }

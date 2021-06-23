@@ -18,15 +18,15 @@
     font-size: 20px;
     top: 14px;
     right: 15px;
-    color: var(--jf-black);
+    color: $text-d;
     user-select: none;
 }
 
 /* ----- box */
 .jf-box{
     padding: 10px;
-    border: var(--jf-border);
-    border-radius: var(--jf-border-radius);
+    border: $border;
+    border-radius: $border-radius;
     height: 100%;
 }
 .form-max-width{
@@ -49,13 +49,13 @@
     cursor: pointer;
     display: block;
     font-size: 18px;
-    background-color: var(--jf-primary-color) !important;
-    color: var(--jf-white-hover);
+    background-color: $primary-color !important;
+    color: $text-l-hover;
     margin-right: auto;
     margin-left: auto;
 }
 .jf-button:hover{
-    background-color: var(--jf-primary-color-hover) !important;
+    background-color: $primary-color-hover !important;
     transition: background-color 200ms;
 }
 
@@ -66,10 +66,10 @@
     margin-left: auto;
     display: block;
     padding: 0 12px;
-    border-radius: var(--jf-border-radius);
+    border-radius: $border-radius;
     height: 42px;
     line-height: 40px;
-    border: var(--jf-border);
+    border: $border;
     margin-bottom: 15px;
     text-align: right;
     font-size: 16px !important;
@@ -78,8 +78,8 @@ textarea{
     resize: none;
     padding: 12px;
     margin-bottom: 15px;
-    border: var(--jf-border);
-    border-radius: var(--jf-border-radius);
+    border: $border;
+    border-radius: $border-radius;
     width: 100%;
     height: 150px !important;
     font-family: Vazir;
@@ -88,12 +88,12 @@ textarea{
 select{
     width: 100%;
     padding: 10px;
-    border-radius: var(--jf-border-radius);
+    border-radius: $border-radius;
 }
 
 /* ----- tables */
 .table{
-    background: var(--jf-white-hover);
+    background-color: $bg-l-hover;
     padding: 20px;
     text-align: center;
     border-collapse: collapse;
@@ -105,18 +105,18 @@ select{
     width: 100%;
 }
 .table .title-row{
-    background-color: var(--jf-white);
+    background-color: $bg-l;
     height: 50px;
     font-size: 14px;
 }
 .table td{
     white-space: nowrap;
-    color: var(--jf-black);
+    color: $bg-d;
     padding: 10px 20px;
     font-size: 14px;
 }
 .table td, table th{
-    border-bottom: var(--jf-border);
+    border-bottom: $border;
 }
 
 /* pagination */
@@ -129,22 +129,22 @@ select{
 .pagination-item{
     min-width: 40px;
     height: 40px;
-    background-color: var(--jf-white);
+    background-color: $bg-l;
     box-shadow: 0px 1px 2px #aaa;
-    border-radius: var(--jf-border-radius);
+    border-radius: $border-radius;
     margin: 0px 10px;
     text-align: center;
     padding-top: 7px;
 }
 .pagination-item:hover{
-    background-color: var(--jf-white-hover);
+    background-color: $bg-l-hover;
 }
 
 /* tab box */
 .tab__box{
     background: #fff;
     margin-bottom: 20px;
-    border-radius: var(--jf-border-radius);
+    border-radius: $border-radius;
 }
 .tab__box .tab__items{
     /*white-space: nowrap;*/
@@ -159,7 +159,7 @@ select{
 }
 .tab__box .tab__item.is-active{
     border-radius: 10px;
-    background-color: var(--jf-primary-color);
+    background-color: $primary-color;
     text-align: center;
     color: #fff;
 }
