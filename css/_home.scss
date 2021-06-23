@@ -26,6 +26,17 @@
 }
 
 // ! top cards
+.jf-box{
+  padding: 10px;
+  border: $border;
+  border-radius: $border-radius;
+  height: 100%;
+}
+.form-max-width{
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .top-card{
     margin: 0;
 }
