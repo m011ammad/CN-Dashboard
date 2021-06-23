@@ -3727,10 +3727,6 @@ select {
   color: #fff;
 }
 
-.top-card {
-  margin: 0;
-}
-
 .banner-type-one {
   padding: 25px 15px;
   position: relative;
@@ -3760,6 +3756,10 @@ select {
 .banner-type-one__button--reject {
   background-color: transparent;
   border: 1px solid #f4f4f4;
+}
+
+.top-card {
+  margin: 0;
 }
 
 .top-card-number {
