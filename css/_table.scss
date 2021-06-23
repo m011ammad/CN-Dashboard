@@ -1,0 +1,74 @@
+/*
+* this styles includes all page table.html styles
+*/
+
+// !tab box
+.tab__box{
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: $border-radius;
+  .tab__items{
+    padding: 8px 10px;
+    .tab__item{
+      color: $text-d;
+      padding: 5px 10px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+}
+.tab__item.is-active{
+  border-radius: 10px;
+  background-color: $primary-color;
+  text-align: center;
+  color: $text-l-hover !important;
+}
+
+// ! tables
+.table__table{
+  overflow-x: scroll;
+  width: 100%;
+  .table{
+    background-color: $bg-l-hover;
+    padding: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    .title-row{
+      background-color: $bg-l;
+      height: 50px;
+      font-size: 14px;
+    }
+    td{
+      white-space: nowrap;
+      color: $bg-d;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    td, th{
+      border-bottom: $border;
+    }
+  }
+}
+
+// ! pagination
+.pagination-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  .pagination-item{
+    min-width: 40px;
+    height: 40px;
+    background-color: $bg-l;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+    margin: 0px 10px;
+    text-align: center;
+    padding-top: 7px;
+    &:hover{
+      background-color: $bg-l-hover;
+    }
+  }
+}
