@@ -1,0 +1,55 @@
+.form-block{
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $bg-l-hover;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  label{
+    font-size: 14px;
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input, textarea{
+    text-align: right;
+    font-size: 16px !important;
+  }
+  .form-input{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 0 12px;
+    border-radius: $border-radius;
+    height: 42px;
+    line-height: 40px;
+    border: $border;
+    margin-bottom: 15px;
+  }
+  textarea{
+    resize: none;
+    height: 150px !important;
+  }
+  .form-button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    font-weight: 500;
+    border-radius: $border-radius;
+    font-size: 18px;
+    background-color: $primary-color !important;
+    color: $text-l-hover;
+    text-align: center;
+    &:hover{
+      background-color: $primary-color-hover !important;
+      transition: background-color 200ms;
+    }
+  }
+}

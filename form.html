@@ -83,99 +83,160 @@
 
     <div class="container-fluid main-content">
         <div class="row">
-            <div class="col-12 form-max-width my-4">
-                <div class="section-info">
-                    <span class="material-icons material-icons-outlined">info</span>
-                    فرم یک ستونه
-                </div>
-                <form action="">
+            <div class="col-12 col-lg-6">
+
+                <form class="form-block my-4 px-3 px-lg-5" action="">
                     <br>
-                    <h2>اطلاعات فردی</h2>
+                    <h2>یک ستون - لیبل دار</h2>
                     <br>
                     <div class="row">
     
-                        <div class="input-block col-6">
-                            <label class="input-help text-right margin-bottom-12" >
-                                نام و نام‌خانوادگی
-                            </label>
-                            <input class="text" placeholder="نام کاربری" value="محمد سجادی">
+                        <div class="input-block col-12">
+                            <label class="">ورودی تکست</label>
+                            <input class="form-input" placeholder="مقدار را وارد کنید:">
                         </div>
     
-                        <div class="input-block col-6">
-                            <label class="input-help text-right margin-bottom-12" >
-                                جنسیت
-                            </label>
-                            <select  placeholder="نام کاربری" value="محمد سجادی">
-                                <option value="man">مرد</option>
-                                <option value="woman">زن</option>
+                        <div class="input-block col-12">
+                            </label>لیست کشویی</label>
+                            <select class="form-input">
+                                <option value="">آیتم 1</option>
+                                <option value="">آیتم 2</option>
+                                <option value="">آیتم 3</option>
                             </select>
                         </div>
     
-                        <div class="input-block col-6">
-                            <label class="input-help text-right margin-bottom-12" >
-                                ایمیل
-                            </label>
-                            <input class="text text-left" placeholder="ایمیل" value="mohammadsjh@gmail.com">
+                        <div class="input-block col-12">
+                            <label class="">تاریخ - تقویم</label>
+                            <input type="date" class="form-input">
+                        </div>
+
+                        <div class="input-block col-12">
+                            <label class="">انتخاب فایل</label>
+                            <input type="file" class="form-input">
+                        </div>
+
+                        <div class="input-block col-12">
+                            <label class="">انتخاب رنگ</label>
+                            <input type="color" class="form-input">
                         </div>
     
-                        <div class="input-block col-6">
-                            <label class="input-help text-right margin-bottom-12">
-                                شماره تماس
-                            </label>
-                            <input class="text text-left" placeholder="شماره تماس" value="09186304616">
+    
+                        <div class="input-block col-12 mt-4">
+                            <label class="input-help">باکس نوشته(TextArea)</label>
+                            <textarea class="form-input" placeholder="بنویسید:"></textarea>
                         </div>
     
-                        <div class="input-block col-6">
-                            <label class="input-help text-right margin-bottom-12" >
-                                استان
-                            </label>
-                            <select  placeholder="استان" value="">
-                                <option value="">مرکزی</option>
-                                <option value="">تهران</option>
-                                <option value="">آذربایجان شرقی</option>
-                                <option value="">آذربایجان غربی</option>
-                                <option value="">زنجان</option>
-                                <option value="">اصفهان</option>
+                        <div class="input-block col-12 mt-4 mb-4">
+                            <input type="submit" class="form-button" value="تایید و ارسال"></input>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <form class="form-block my-4 px-3 px-lg-5" action="">
+                    <br>
+                    <h2>یک ستون - بدون لیبل</h2>
+                    <br>
+                    <div class="row">
+    
+                        <div class="input-block col-12">
+                            <input class="form-input" placeholder="مقدار را وارد کنید:">
+                        </div>
+    
+                        <div class="input-block col-12">
+                            <select class="form-input">                            
+                                <option value="">یک گزینه را انتخاب کنید</option>
+                                <option value="">آیتم 1</option>
+                                <option value="">آیتم 2</option>
+                                <option value="">آیتم 3</option>
                             </select>
                         </div>
     
-                        <div class="input-block col-6">
-                            <label class="input-help text-right margin-bottom-12" >
-                                شهر
-                            </label>
-                            <select  placeholder="شهر" value="">
-                                <option value="">اراک</option>
-                                <option value="">خنداب</option>
-                                <option value="">محلات</option>
-                                <option value="">شازند</option>
-                                <option value="">خمین</option>
-                                <option value="">مهاجران</option>
-                            </select>
+                        <div class="input-block col-12">
+                            <input type="date" class="form-input" value="2020-01-01">
+                        </div>
+
+                        <div class="input-block col-12">
+                            <input type="file" class="form-input">
+                        </div>
+
+                        <div class="input-block col-12">
+                            <input type="color" class="form-input">
                         </div>
     
                         <div class="input-block col-12 mt-4">
-                            <label class="input-help text-right margin-bottom-12" >
-                                درباره من
-                            </label>
-                            <textarea class="text" placeholder="مختصری درباره خود بنویسید:" value="محمد سجادی"></textarea>
+                            <textarea class="form-input" placeholder="نوشته خود را وارد کنید:"></textarea>
                         </div>
     
-                        <div class="input-block col-6">
-    
+                        <div class="input-block col-12 mt-4 mb-4">
+                            <input type="submit" class="form-button" value="تایید و ارسال"></input>
                         </div>
-    
-                    </div>
 
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12">
+                <form class="form-block my-4 px-3 px-lg-5" action="">
                     <br>
+                    <h2>فرم دو ستونه</h2>
                     <br>
-                    <button class="jf-button margin-left-right-auto jf-button-design">ذخیره اطلاعات</button>
+                    <div class="row">
+    
+                        <div class="input-block col-12 col-lg-6">
+                            <label class="">ورودی تکست</label>
+                            <input class="form-input" placeholder="مقدار را وارد کنید:">
+                        </div>
+
+                        <div class="input-block col-12 col-lg-6">
+                            <label class="">ورودی تکست</label>
+                            <input class="form-input" placeholder="مقدار را وارد کنید:">
+                        </div>
+    
+                        <div class="input-block col-12 col-lg-6">
+                            </label>لیست کشویی</label>
+                            <select class="form-input">
+                                <option value="">آیتم 1</option>
+                                <option value="">آیتم 2</option>
+                                <option value="">آیتم 3</option>
+                            </select>
+                        </div>
+    
+                        <div class="input-block col-12 col-lg-6">
+                            <label class="">تاریخ - تقویم</label>
+                            <input type="date" class="form-input">
+                        </div>
+
+                        <div class="input-block col-12 col-lg-6">
+                            <label class="">انتخاب رنگ</label>
+                            <input type="color" class="form-input">
+                        </div>
+
+                        <div class="input-block col-12 col-lg-6">
+                            <label class="">انتخاب فایل</label>
+                            <input type="file" class="form-input">
+                        </div>
+    
+                        <div class="input-block col-12 mt-4">
+                            <label class="input-help">باکس نوشته(TextArea)</label>
+                            <textarea class="form-input" placeholder="بنویسید:"></textarea>
+                        </div>
+    
+                        <div class="input-block col-12 mt-4 mb-4">
+                            <input type="submit" class="form-button" value="تایید و ارسال"></input>
+                        </div>
+
+                    </div>
                 </form>
             </div>
         </div>
-
     </div>
 </div>
 </body>
+<br><br>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 </html>

@@ -3575,76 +3575,6 @@ hr {
   user-select: none;
 }
 
-/* ----- box */
-.jf-box {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 100%;
-}
-
-.form-max-width {
-  max-width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* ----- buttons */
-.jf-button {
-  padding: 10px 45px;
-  cursor: pointer;
-  user-select: none;
-  white-space: nowrap;
-  font-weight: 500;
-  border-radius: 10px;
-  cursor: pointer;
-  display: block;
-  font-size: 18px;
-  background-color: #FF8552 !important;
-  color: #fff;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.jf-button:hover {
-  background-color: #fa682a !important;
-  transition: background-color 200ms;
-}
-
-/* ----- forms */
-.text {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  padding: 0 12px;
-  border-radius: 10px;
-  height: 42px;
-  line-height: 40px;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  text-align: right;
-  font-size: 16px !important;
-}
-
-textarea {
-  resize: none;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 100%;
-  height: 150px !important;
-  font-family: Vazir;
-  font-size: 16px;
-}
-
-select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-}
-
 .banner-type-one {
   padding: 25px 15px;
   position: relative;
@@ -3674,6 +3604,13 @@ select {
 .banner-type-one__button--reject {
   background-color: transparent;
   border: 1px solid #f4f4f4;
+}
+
+.jf-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
 }
 
 .top-card {
@@ -4122,4 +4059,63 @@ ul li.is-active {
 
 .pagination-block .pagination-item:hover {
   background-color: #fff;
+}
+
+.form-block {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px #ccc;
+}
+
+.form-block label {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-block input, .form-block textarea {
+  text-align: right;
+  font-size: 16px !important;
+}
+
+.form-block .form-input {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 0 12px;
+  border-radius: 10px;
+  height: 42px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.form-block textarea {
+  resize: none;
+  height: 150px !important;
+}
+
+.form-block .form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #FF8552 !important;
+  color: #fff;
+  text-align: center;
+}
+
+.form-block .form-button:hover {
+  background-color: #fa682a !important;
+  transition: background-color 200ms;
 }
