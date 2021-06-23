@@ -1,0 +1,15 @@
+/* ! content block */
+.left-side-block{
+    margin-right: 250px;
+    transition: all 200ms ease;
+}
+.left-side-block.is-active{
+    margin-right: 80px;
+    transition: all 200ms ease;
+}
+/* ! main */
+.main-content{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
