@@ -4119,3 +4119,19 @@ ul li.is-active {
   background-color: #fa682a !important;
   transition: background-color 200ms;
 }
+
+.setting__title {
+  text-align: center;
+}
+
+.setting__profile-img {
+  width: 100%;
+}
+
+.setting__profile-img img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
