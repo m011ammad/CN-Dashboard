@@ -76,3 +76,22 @@
         }
     }
 }
+.header__search{
+    position: relative;
+    width: auto;
+    align-items: center;
+}
+input{
+    border: $border;
+    border-radius: $border-radius;
+    padding: 5px 35px 5px 10px;
+    background-color: transparent;
+    width: 100%;
+    display: block;
+}
+button{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background-color: transparent;
+}

@@ -3755,6 +3755,28 @@ hr {
   right: -2px;
 }
 
+.header__search {
+  position: relative;
+  width: auto;
+  align-items: center;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 35px 5px 10px;
+  background-color: transparent;
+  width: 100%;
+  display: block;
+}
+
+button {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  background-color: transparent;
+}
+
 .right-side-block {
   width: 250px;
   background-color: #E9ECF5;
