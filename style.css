@@ -3755,13 +3755,13 @@ hr {
   right: -2px;
 }
 
-.header__search {
+.header .header__search {
   position: relative;
   width: auto;
   align-items: center;
 }
 
-input {
+.header input {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 5px 35px 5px 10px;
@@ -3770,7 +3770,7 @@ input {
   display: block;
 }
 
-button {
+.header button {
   position: absolute;
   right: 5px;
   top: 4px;
