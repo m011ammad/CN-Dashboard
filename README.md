@@ -3,7 +3,7 @@ RTL-Dashboard is fully responsive and a free to use Bootstrap admin template. Th
 the default language of this template is persian and based RTL direction, But it can be easily changed.
 
 ## Theme Demo
-![RTL-Dashboard](https://github.com/mohammadsjh/RTL-Dashboard/blob/main/sc.png?raw=true 
+![RTL-Dashboard](https://github.com/mohammadsjh/RTL-Dashboard/blob/main/img/sc.png?raw=true 
 "RTL-Dashboard")
 
 ## templates
