@@ -7,6 +7,10 @@ the default language of this template is persian and based RTL direction, But it
 ![RTL-Dashboard](https://github.com/mohammadsjh/RTL-Dashboard/blob/main/img/sc.png?raw=true 
 "RTL-Dashboard")
 
+## how to run?
+clone and change the desire parts.\
+for deploy the project, change the deployment tasks and otherwise ignore it. 
+
 ## templates
 * dashboard
 * tables
