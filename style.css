@@ -4178,7 +4178,6 @@ hr {
 }
 
 .top-card-number {
-  width: 100%;
   font-size: 28px;
   font-weight: bold;
   border-radius: 5px;
@@ -4588,6 +4587,13 @@ ul li.is-active {
   background-color: #FF8552;
   text-align: center;
   color: #fff !important;
+}
+
+.table__search input {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .table__table {

@@ -24,6 +24,16 @@
   color: $text-l-hover !important;
 }
 
+// ! search
+.table__search {
+  input {
+    width: 100%;
+    max-width: 400px;
+    border-radius: $border-radius;
+    padding: 10px;
+  }
+}
+
 // ! tables
 .table__table{
   overflow-x: scroll;
