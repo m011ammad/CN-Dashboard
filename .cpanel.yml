@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mohamma4/public_html
+    - export DEPLOYPATH= your paht
     - /bin/cp -a * $DEPLOYPATH
