@@ -4,6 +4,7 @@
   "description": "RTL-Dashboard is fully responsive and a free to use Bootstrap admin template.\\\r This template only uses the Bootstrap-Gird system(version 5).\\\r the default language of this template is persian and based RTL direction, But it can be easily changed.",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.1",
     "jquery": "^3.6.0"
   },
