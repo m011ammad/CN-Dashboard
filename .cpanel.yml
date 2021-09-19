@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH= your paht
+    - export DEPLOYPATH= {add your path}
     - /bin/cp -a * $DEPLOYPATH
