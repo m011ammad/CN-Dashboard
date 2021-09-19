@@ -1,0 +1,24 @@
+{
+  "name": "cn-dashboard",
+  "version": "1.0.0",
+  "description": "RTL-Dashboard is fully responsive and a free to use Bootstrap admin template.\\\r This template only uses the Bootstrap-Gird system(version 5).\\\r the default language of this template is persian and based RTL direction, But it can be easily changed.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m011ammad/CN-Dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m011ammad/CN-Dashboard/issues"
+  },
+  "homepage": "https://github.com/m011ammad/CN-Dashboard#readme"
+}
