@@ -1,32 +1,3 @@
-.right-side-block{
-    width: 250px;
-    background-color: #E9ECF5;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 900;
-    top: 0;
-    overflow-y: auto;
-    transition: all 200ms ease;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-    span.bars{
-        position: absolute;
-        left: 25px;
-        top: 15px;
-        display: none;
-    }
-}
-.right-side-block.is-active{
-    right: -170px;
-    transition: all 200ms ease;
-    ul li.is-active{
-        background-color: transparent;
-        border: none;
-    }
-}
 ul li{
     position: relative;
     a{

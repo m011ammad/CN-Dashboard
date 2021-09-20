@@ -1,147 +1,37 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-    <title>داشبورد</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|
-    Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-</head>
+<head></head>
 
 <body>
 
-<div class="right-side-block">
-    <aside>
-        <span class="material-icons material-icons-outlined bars">menu</span>
-        <div class="profile-block">
-            <div class="profile__img">
-                <img src="img/profile-image.jpg">
-            </div>
-            <span class="profile__name">محمد سجادی</span>
-            <span class="profile__skill">Front-End Developer</span>
-        </div>
-        <br>
-        <ul>
-            <li><a href="index.html"><span class="material-icons material-icons-outlined ic">dashboard</span>در یک نگاه</a></li>
-            <li><a href="table.html"><span class="material-icons material-icons-outlined ic">table_view</span>جدول‌ها</a></li>
-            <li><a href="form.html"><span class="material-icons material-icons-outlined ic">dynamic_form</span>فرم‌ها</a></li>
-            <li class="is-active"><a href="setting.html"><span class="material-icons material-icons-outlined ic">account_circle</span>حساب کاربری</a></li>
-        </ul>
-    </aside>
-    <p class="copy-right"><a href="#">RTL-Dashboard version 1.0 &copy;</a></p>
-</div>
+    <div class="right-side"></div>
 
-<div class="left-side-block">
+    <div class="left-side">
 
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 header-block">
-                    <div class="header__right">
-                        <a href="#" class="menu-icon bars">
-                            <div class="material-icons md-24 material-icons-outlined">menu</div>
-                        </a>
-                        <h1 class="logo">داشبورد فارسی</h1>
-                    </div>
-                    <div class="header__left">
-                        
-                        <div class="header__search d-none d-lg-block ms-4">
-                            <input type="search" placeholder="جستجو:" />
-                            <button>
-                                <span class="material-icons material-icons-outlined">search</span>
-                            </button>
-                        </div>
-                        
-                        <div class="notification">
-                            <a href="">
-                                <span class="material-icons material-icons-outlined notif__icon">notifications</span>
-                            </a>
-                        </div>
-                        <a href="">
-                            <span class="material-icons material-icons-outlined" title="خروج از حساب کاربری">exit_to_app</span>
-                        </a>
-                    </div>
+        <header></header>
+
+        <main>
+            <div class="container-fluid">
+                <div class="row left-main">
                 </div>
             </div>
+        </main>
 
-            <div class="row mb-3 d-lg-none">
-                <div class="col-12">
-                    <div class="header__search">
-                        <input type="search" placeholder="جستجو:" />
-                        <button>
-                            <span class="material-icons material-icons-outlined">search</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <footer></footer>
 
-        </div>
-    </header>
-
-    <div class="main-content">
-        <div class="form-max-width my-5">
-            <div class="col-12">
-                <form class="form-block my-4 px-3 px-lg-5" action="">
-                    <br>
-                    <h2 class="setting__title">تنظیمات حساب کاربری</h2>
-                    <br>
-                    <div class="row">
-
-                        <div class="setting__profile-img">
-                            <img src="img/profile-image.jpg" alt="">
-                        </div>
-    
-                        <div class="input-block col-12">
-                            <label class="">نام کاربری</label>
-                            <input class="form-input" placeholder="مثلا: mohammad">
-                        </div>
-
-                        <div class="input-block col-12">
-                            <label class="">پسوورد</label>
-                            <input type="password" class="form-input" placeholder="شامل: حروف انگلیسی، اعداد، کاراکترها">
-                        </div>
-    
-                        
-                        <div class="input-block col-12">
-                            <label class="">تاریخ تولد</label>
-                            <input type="date" class="form-input">
-                        </div>
-
-                        <div class="input-block col-12">
-                            </label>محل سکونت</label>
-                            <select class="form-input">
-                                <option value="">تهران</option>
-                                <option value="">شیراز</option>
-                                <option value="">اصفهان</option>
-                                <option value="">اراک</option>
-                                <option value="">مشهد</option>
-                                <option value="">سمنان</option>
-                            </select>
-                        </div>
-
-                        <div class="input-block col-12">
-                            <label class="">آپلود رزومه</label>
-                            <input type="file" class="form-input">
-                        </div>
-    
-                        <div class="input-block col-12 mt-4">
-                            <label class="input-help">اطلاعات تکمیلی در مورد خود</label>
-                            <textarea class="form-input" placeholder="موارد دلخواه را اینجا وارد کنید:"></textarea>
-                        </div>
-    
-                        <div class="input-block col-12 mt-4 mb-4">
-                            <input type="submit" class="form-button" value="تایید و ارسال"></input>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
-</div>
+
 </body>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        $("head").load("inc/head.html");
+        $(".right-side").load("inc/sidebar.html");
+        $("header").load("inc/left-header.html");
+        $(".left-main").load("inc/left-main__account.html");
+        $("footer").load("inc/footer.html");
+        console.log(1);
+    });
+</script>
+
 </html>

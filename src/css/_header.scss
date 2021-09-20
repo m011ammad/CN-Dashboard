@@ -1,16 +1,7 @@
-/* ! header */
 .header{
-    border-bottom: $border;
-    .header-block{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    background-color: #fff;
+    padding: 20px;
+
     .header__right{
         display: flex;
         margin-left: auto;
@@ -48,7 +39,7 @@
         input{
             border: $border;
             border-radius: $border-radius;
-            padding: 3px 35px 3px 10px;
+            padding: 5px 35px 5px 10px;
             background-color: transparent;
             width: 100%;
             display: block;
@@ -65,8 +56,8 @@
         }
         .notif__icon::before{
             content: '';
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background-color: $primary-color;
             position: absolute;
@@ -74,27 +65,5 @@
             top: 0;
             right: -2px;
         }
-    }
-}
-
-.header{
-    .header__search{
-        position: relative;
-        width: auto;
-        align-items: center;
-    }
-    input{
-        border: $border;
-        border-radius: $border-radius;
-        padding: 5px 35px 5px 10px;
-        background-color: transparent;
-        width: 100%;
-        display: block;
-    }
-    button{
-        position: absolute;
-        right: 5px;
-        top: 4px;
-        background-color: transparent;
     }
 }
