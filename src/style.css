@@ -4461,7 +4461,7 @@ ul li.is-active {
   position: relative;
 }
 
-.header .header__left .notif__icon::before {
+.header .header__left .notif__icon::after {
   content: '';
   width: 10px;
   height: 10px;
@@ -4729,4 +4729,8 @@ ul li.is-active {
   height: 150px;
   margin: 20px auto;
   border-radius: 10px;
+}
+
+.fas {
+  font-size: 20px;
 }
