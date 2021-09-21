@@ -4471,6 +4471,10 @@ body {
   text-align: center;
 }
 
+.top-chart-block {
+  height: 300px;
+}
+
 .banner-type-two {
   width: 100%;
   height: 200px;
