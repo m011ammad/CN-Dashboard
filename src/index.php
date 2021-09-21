@@ -33,6 +33,6 @@
 </body>
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/chart.js/dist/chart.min.js"></script>
 <script src="js/main.js"></script>
-
 </html>
