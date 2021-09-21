@@ -26,11 +26,11 @@
 }
 
 // ! top cards
-.jf-box{
-  padding: 10px;
-  border: $border;
-  border-radius: $border-radius;
-  height: 100%;
+.counter-box{
+    padding: 10px;
+    border: $border;
+    border-radius: $border-radius;
+    height: 100%;
 }
 .top-card{
     margin: 0;
@@ -44,6 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px;
 }
 .top-card-number>p{
     text-align: center;

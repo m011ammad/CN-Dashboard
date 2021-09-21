@@ -4132,7 +4132,7 @@
   border: 0;
   outline: 0;
   box-sizing: border-box;
-  font-family: Vazir;
+  font-family: Vazir , Arial, Helvetica, sans-serif;
 }
 
 body, html {
@@ -4444,7 +4444,7 @@ body {
   border: 1px solid #f9f9f9;
 }
 
-.jf-box {
+.counter-box {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -4464,6 +4464,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0px;
 }
 
 .top-card-number > p {
