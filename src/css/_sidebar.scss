@@ -26,9 +26,10 @@
 // ! profile
 .profile-block{
     width: 140px;
-    height: 140px;
-    margin: 15px auto 50px;
+    height: auto;
+    margin: 20px auto;
     border-radius: 50%;
+
     .profile__img{
         width: 100%;
         height: 100%;
@@ -68,6 +69,25 @@
     font-size: 12px;
     background-color: $text-l-hover;
 }
-.right-side-block.is-active .copy-right{
+
+// ! *****
+// ! if is active
+// ! *****
+.sidebar-none-active {
+    width: 60px;
+}
+.right-side.sidebar-none-active .profile-block {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    .profile__name,
+    .profile__skill {
+        display: none;
+    }
+}
+.right-side.sidebar-none-active ul li span:not(.fas) {
+    display: none;
+}
+.right-side.sidebar-none-active .copy-right {
     display: none;
 }

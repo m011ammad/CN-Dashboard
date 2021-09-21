@@ -28,3 +28,6 @@ body {
     display: flex;
     flex-direction: column;
 }
+.left-side-active {
+    width: calc(100% - 60px);
+}

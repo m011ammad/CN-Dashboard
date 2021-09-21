@@ -4218,6 +4218,10 @@ body {
   flex-direction: column;
 }
 
+.left-side-active {
+  width: calc(100% - 60px);
+}
+
 .right-side-inner ul a {
   display: block;
   width: 100%;
@@ -4247,8 +4251,8 @@ body {
 
 .profile-block {
   width: 140px;
-  height: 140px;
-  margin: 15px auto 50px;
+  height: auto;
+  margin: 20px auto;
   border-radius: 50%;
 }
 
@@ -4294,7 +4298,26 @@ body {
   background-color: #fff;
 }
 
-.right-side-block.is-active .copy-right {
+.sidebar-none-active {
+  width: 60px;
+}
+
+.right-side.sidebar-none-active .profile-block {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+}
+
+.right-side.sidebar-none-active .profile-block .profile__name,
+.right-side.sidebar-none-active .profile-block .profile__skill {
+  display: none;
+}
+
+.right-side.sidebar-none-active ul li span:not(.fas) {
+  display: none;
+}
+
+.right-side.sidebar-none-active .copy-right {
   display: none;
 }
 
