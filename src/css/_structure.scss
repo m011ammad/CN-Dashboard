@@ -1,12 +1,12 @@
 body {
     display: flex;
-    justify-content: space-between
+    // width: 100;
 }
 
 .right-side{
     position: relative;
     width: 250px;
-    height: 100%;
+    height: auto;
     overflow-y: auto;
     .right-side-inner {
         width: inherit;
@@ -19,14 +19,12 @@ body {
         top: 0;
         bottom: 0;
         right: 0;
-        z-index: 999;
+        // z-index: 999;
     }
-}
-.right-side-active {
-    width: 50px !important;
 }
 
 .left-side{
     width: calc(100% - 250px);
-    min-height: 101vh;
+    display: flex;
+    flex-direction: column;
 }
