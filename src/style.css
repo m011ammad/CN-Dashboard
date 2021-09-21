@@ -4321,6 +4321,15 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    width: 100%;
+  }
+}
+
 .header {
   background-color: #fff;
   padding: 20px;

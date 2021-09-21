@@ -91,3 +91,13 @@
 .right-side.sidebar-none-active .copy-right {
     display: none;
 }
+
+// ! responsive
+@media screen and (max-width: 768px) {
+    .right-side {
+        display: none;
+    }
+    .left-side {
+        width: 100%;
+    }
+}
