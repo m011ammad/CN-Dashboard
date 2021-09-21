@@ -8,10 +8,8 @@
         align-items: center;
         width: auto;
         .bars{
-            cursor: pointer;
-            user-select: none;
         }
-        .menu-icon{
+        .desktop-menu-icon{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,6 +17,8 @@
             border-radius: 5px;
             width: 35px;
             height: 35px;
+            cursor: pointer;
+            user-select: none;
         }
         .logo{
             padding: 2px 10px;

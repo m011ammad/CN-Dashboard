@@ -22,6 +22,9 @@ body {
         z-index: 999;
     }
 }
+.right-side-active {
+    width: 50px !important;
+}
 
 .left-side{
     width: calc(100% - 250px);

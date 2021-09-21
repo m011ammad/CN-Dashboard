@@ -4214,6 +4214,10 @@ body {
   z-index: 999;
 }
 
+.right-side-active {
+  width: 50px !important;
+}
+
 .left-side {
   width: calc(100% - 250px);
   min-height: 101vh;
@@ -4311,12 +4315,7 @@ body {
   width: auto;
 }
 
-.header .header__right .bars {
-  cursor: pointer;
-  user-select: none;
-}
-
-.header .header__right .menu-icon {
+.header .header__right .desktop-menu-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4324,6 +4323,8 @@ body {
   border-radius: 5px;
   width: 35px;
   height: 35px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .header .header__right .logo {
