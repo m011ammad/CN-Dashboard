@@ -4409,6 +4409,24 @@ body {
   max-height: 250px;
 }
 
+.activities ul {
+  margin-top: 10px;
+  padding: 5px 1px;
+}
+
+.activities ul li {
+  margin-bottom: 5px;
+}
+
+.activities ul li:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.activities ul .activities-date {
+  color: #888;
+  font-size: 12px;
+}
+
 /*
 * this styles includes all page table.html styles
 */

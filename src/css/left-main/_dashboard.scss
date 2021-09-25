@@ -8,3 +8,19 @@
     min-height: 250px;
     max-height: 250px;
 }
+
+// ! activities
+.activities ul {
+    margin-top: 10px;
+    padding: 5px 1px;
+    li {
+        margin-bottom: 5px;
+        &:nth-child(even) {
+            background-color: $bg-l;
+        }
+    }
+    .activities-date {
+        color: $text-d-mute;
+        font-size: 12px;
+    }
+}
