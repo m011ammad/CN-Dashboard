@@ -4521,19 +4521,23 @@ body {
   background-color: #f9f9f9;
 }
 
+.form-section-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
 .form-block {
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 2px 3px #ccc;
+  max-width: 600px;
+  padding: 20px !important;
 }
 
 .form-block label {
-  font-size: 14px;
-  color: #777;
   display: block;
+  font-size: 16px;
+  font-weight: 900;
   margin-bottom: 5px;
 }
 

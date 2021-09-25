@@ -1,14 +1,18 @@
+.form-section-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: $border;
+}
+
 .form-block{
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: $bg-l-hover;
-  border-radius: $border-radius;
-  box-shadow: $shadow;
+  max-width: 600px;
+  padding: 20px !important;
   label{
-    font-size: 14px;
-    color: #777;
     display: block;
+    font-size: 16px;
+    font-weight: 900;
     margin-bottom: 5px;
   }
   input, textarea{
