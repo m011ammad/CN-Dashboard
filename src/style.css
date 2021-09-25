@@ -4427,30 +4427,6 @@ body {
   font-size: 12px;
 }
 
-#contracts {
-  width: 100%;
-  overflow-x: auto;
-  border-spacing: 0px;
-}
-
-#contracts tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-#contracts tr:hover {
-  background-color: #f9f9f9;
-}
-
-#contracts th, #contracts td {
-  padding: 5px 0px;
-  text-align: right;
-}
-
-#contracts th {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
 .cn-table {
   width: 100%;
   overflow-x: auto;

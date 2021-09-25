@@ -24,26 +24,3 @@
         font-size: 12px;
     }
 }
-
-// ! table
-#contracts {
-    width: 100%;
-    overflow-x: auto;
-    border-spacing: 0px;
-    tr {
-        &:nth-child(even) {
-            background-color: $bg-l;
-        }
-        &:hover {
-            background-color: $bg-l;
-        }
-    }
-    th, td {
-        padding: 5px 0px;
-        text-align: right;
-    }
-    th {
-        margin-bottom: 10px;
-        border-bottom: $border;
-    }
-}
