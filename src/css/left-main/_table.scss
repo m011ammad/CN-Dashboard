@@ -1,65 +1,73 @@
-/*
-* this styles includes all page table.html styles
-*/
-
-// !tab box
-.tab__box{
-  background: #fff;
-  margin-bottom: 20px;
-  border-radius: $border-radius;
-  .tab__items{
-    padding: 8px 10px;
-    .tab__item{
-      color: $text-d;
-      padding: 5px 10px;
-      font-size: 13px;
+.cn-table {
+  width: 100%;
+  overflow-x: auto;
+  border-spacing: 0px;
+  th, td {
+    padding: 7px 0px;
+    text-align: right;
+  }
+  th {
+    margin-bottom: 10px;
+    border-bottom: $border;
+  }
+  .cn-table-action {
+    span:nth-child(1),
+    span:nth-child(2) {
+      font-size: 14px;
       cursor: pointer;
     }
-  }
-}
-.tab__item.is-active{
-  border-radius: 10px;
-  background-color: $primary-color;
-  text-align: center;
-  color: $text-l-hover !important;
-}
-
-// ! search
-.table__search {
-  input {
-    width: 100%;
-    max-width: 400px;
-    border-radius: $border-radius;
-    padding: 10px;
+    span:nth-child(1) {
+      margin-right: auto;
+      &:hover {
+        color: $error-color;
+      }
+    }
+    span:nth-child(2) {
+      margin-right: 10px;
+    }
   }
 }
 
-// ! tables
-.table__table{
-  overflow-x: scroll;
-  width: 100%;
-  .table{
-    background-color: $bg-l-hover;
-    padding: 20px;
-    text-align: center;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    .title-row{
+// ! table stripe
+.cn-table-stripe {
+  tr {
+    &:nth-child(even) {
       background-color: $bg-l;
-      height: 50px;
-      font-size: 14px;
     }
-    td{
-      white-space: nowrap;
-      color: $bg-d;
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-    td, th{
-      border-bottom: $border;
+    &:hover {
+      background-color: $bg-l;
     }
   }
+}
+// ! table border
+.cn-table-border {
+  td {
+    border-bottom: $border;
+  }
+  tr {
+    &:hover {
+      background-color: $bg-l;
+    }
+  }
+}
+// ! label
+.cn-table-label {
+  font-size: 14px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  min-width: 90px;
+}
+.cn-table-label--done {
+  background-color: $success-color;
+  color: $text-l;
+}
+.cn-table-label--doing {
+  background-color: $info-color;
+  color: $text-l;
+}
+.cn-table-label--delete {
+  background-color: $error-color;
+  color: $text-l;
 }
 
 // ! pagination
@@ -71,14 +79,14 @@
   .pagination-item{
     min-width: 40px;
     height: 40px;
-    background-color: $bg-l;
-    box-shadow: $shadow;
+    background-color: $bg-l-hover;
+    border: $border;
     border-radius: $border-radius;
     margin: 0px 10px;
     text-align: center;
     padding-top: 7px;
     &:hover{
-      background-color: $bg-l-hover;
+      background-color: $bg-l;
     }
   }
 }

@@ -4451,69 +4451,76 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-/*
-* this styles includes all page table.html styles
-*/
-.tab__box {
-  background: #fff;
-  margin-bottom: 20px;
-  border-radius: 10px;
+.cn-table {
+  width: 100%;
+  overflow-x: auto;
+  border-spacing: 0px;
 }
 
-.tab__box .tab__items {
-  padding: 8px 10px;
+.cn-table th, .cn-table td {
+  padding: 7px 0px;
+  text-align: right;
 }
 
-.tab__box .tab__items .tab__item {
-  color: #444;
-  padding: 5px 10px;
-  font-size: 13px;
+.cn-table th {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cn-table .cn-table-action span:nth-child(1),
+.cn-table .cn-table-action span:nth-child(2) {
+  font-size: 14px;
   cursor: pointer;
 }
 
-.tab__item.is-active {
-  border-radius: 10px;
-  background-color: #FF8552;
-  text-align: center;
-  color: #fff !important;
+.cn-table .cn-table-action span:nth-child(1) {
+  margin-right: auto;
 }
 
-.table__search input {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  padding: 10px;
+.cn-table .cn-table-action span:nth-child(1):hover {
+  color: #C62828;
 }
 
-.table__table {
-  overflow-x: scroll;
-  width: 100%;
+.cn-table .cn-table-action span:nth-child(2) {
+  margin-right: 10px;
 }
 
-.table__table .table {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-}
-
-.table__table .table .title-row {
+.cn-table-stripe tr:nth-child(even) {
   background-color: #f9f9f9;
-  height: 50px;
-  font-size: 14px;
 }
 
-.table__table .table td {
-  white-space: nowrap;
-  color: #555;
-  padding: 10px 20px;
-  font-size: 14px;
+.cn-table-stripe tr:hover {
+  background-color: #f9f9f9;
 }
 
-.table__table .table td, .table__table .table th {
+.cn-table-border td {
   border-bottom: 1px solid #ccc;
+}
+
+.cn-table-border tr:hover {
+  background-color: #f9f9f9;
+}
+
+.cn-table-label {
+  font-size: 14px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  min-width: 90px;
+}
+
+.cn-table-label--done {
+  background-color: #2E7D32;
+  color: #f5f5f5;
+}
+
+.cn-table-label--doing {
+  background-color: #2196F3;
+  color: #f5f5f5;
+}
+
+.cn-table-label--delete {
+  background-color: #C62828;
+  color: #f5f5f5;
 }
 
 .pagination-block {
@@ -4526,8 +4533,8 @@ body {
 .pagination-block .pagination-item {
   min-width: 40px;
   height: 40px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 2px 3px #ccc;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 10px;
   margin: 0px 10px;
   text-align: center;
@@ -4535,7 +4542,7 @@ body {
 }
 
 .pagination-block .pagination-item:hover {
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 .form-block {
