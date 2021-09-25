@@ -4799,6 +4799,38 @@ body {
   margin-bottom: 10px;
 }
 
+.active-none {
+  display: none !important;
+}
+
+.active-block {
+  display: block !important;
+}
+
+.accordion-block .accordion-item-title {
+  display: flex;
+  width: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-block .accordion-item-title :nth-child(1) {
+  font-size: 24px;
+}
+
+.accordion-block .accordion-item-title :nth-child(2) {
+  margin-right: 10px;
+}
+
+.accordion-block .accordion-item-block {
+  display: none;
+  position: relative;
+  padding: 10px;
+}
+
 table.calender {
   width: 100% !important;
   border-spacing: 10px;
