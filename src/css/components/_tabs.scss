@@ -1,0 +1,42 @@
+.tab-block {
+    input {
+      display: none;
+      &:checked + label {
+        background-color: $primary-color;
+        color: $text-l-hover;
+      }
+      @for $i from 1 through 4 {
+        &#tab#{$i}:checked {
+            ~ .content-container #c#{$i} {
+                display: block;
+            }
+        }
+      }
+    }
+    label {
+        display: inline-block;
+        width: auto;
+        background-color: $bg-l;
+        padding: 5px 10px;
+        margin-left: 5px;
+        border-radius: $border-radius $border-radius 0px 0px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .content-container {
+        border: $border;
+        border-radius: $border-radius;
+        margin-top: 10px;
+        // border-top: 2px solid $primary-color;
+        .content {
+            padding: 10px;
+            width: 100%;
+            top: 0;
+            display: none;
+            h3 {
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -4745,6 +4745,60 @@ body {
   border-radius: 10px;
 }
 
+.tab-block input {
+  display: none;
+}
+
+.tab-block input:checked + label {
+  background-color: #FF8552;
+  color: #fff;
+}
+
+.tab-block input#tab1:checked ~ .content-container #c1 {
+  display: block;
+}
+
+.tab-block input#tab2:checked ~ .content-container #c2 {
+  display: block;
+}
+
+.tab-block input#tab3:checked ~ .content-container #c3 {
+  display: block;
+}
+
+.tab-block input#tab4:checked ~ .content-container #c4 {
+  display: block;
+}
+
+.tab-block label {
+  display: inline-block;
+  width: auto;
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-block .content-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.tab-block .content-container .content {
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  display: none;
+}
+
+.tab-block .content-container .content h3 {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
 table.calender {
   width: 100% !important;
   border-spacing: 10px;
