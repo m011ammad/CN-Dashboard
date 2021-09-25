@@ -34,7 +34,7 @@
 
 <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../node_modules/chart.js/dist/chart.min.js"></script>
 <script src="js/colors.js"></script>
 <script src="js/dom-change.js"></script>
