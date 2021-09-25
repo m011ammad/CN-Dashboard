@@ -1,19 +1,32 @@
+// libraries
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
-@import '_variables';
-@import '_general';
-@import '_comp';
 
+// assets
+@import '_variables';
+@import '_fonts';
+@import '_reset';
+
+// base
 @import '_structure';
 @import '_sidebar';
 @import '_header';
 @import '_main';
 
-@import '_home';
-@import '_table';
-@import '_form';
-@import '_setting';
+// left main
+@import 'left-main/_dashboard';
+@import 'left-main/_table';
+@import 'left-main/_chart';
+@import 'left-main/_form';
+@import 'left-main/_elements';
+@import 'left-main/_setting';
 
-.fas {
-    font-size: 20px;
-    color: $text-d;
-}
+// components
+@import 'components/_card';
+@import 'components/_box';
+@import 'components/_banners';
+
+// plugin
+@import 'plugin/_calender';
+
+// to-do list
+@import 'components/_todo.scss'

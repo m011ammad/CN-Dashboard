@@ -1,0 +1,37 @@
+table.calender {
+    width: 100% !important;
+    border-spacing: 10px;
+    caption {
+        text-align: right;
+    }
+    th, td {
+        text-align: center;
+    }
+    th{
+        // background-color: red;
+        // border-bottom: $border;
+        font-size: 15px;
+        padding-bottom: 10px;
+        color: $text-d-mute;
+    }
+    td{
+        &:hover{
+            background-color: $bg-l;
+            cursor: pointer;
+        }
+        padding: 5px 0px;
+        border-radius: $border-radius;
+    }
+    td.dayoff{
+        background-color: #fdefee;
+        color: $error-color !important;  
+    }
+}
+
+.calender-select-year,
+.calender-select-month {
+    border: $border;
+    min-width: 60px;
+    border-radius: $border-radius;
+    padding: 2px 5px;
+}

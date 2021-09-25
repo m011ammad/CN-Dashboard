@@ -1,0 +1,258 @@
+<!-- ! card -->
+<div class="row">
+
+    <div class="col-12 col-lg-6 col-xl-3 my-2">
+        <div class="card card--new-users">
+            <div class="card__icon">
+                <img src="img/icons/card-users.svg" alt="">
+            </div>
+            <div class="card__info">
+                <div class="card__title">کاربران جدید</div>
+                <div class="card__number">33,000</div>
+                <!-- <div class="card__percent"><span> 77 </span> <span> % </span></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 my-2">
+        <div class="card card--contract">
+            <div class="card__icon">
+                <img src="img/icons/card-contract.svg" alt="">
+            </div>
+            <div class="card__info">
+                <div class="card__title">قرارداد‌های جدید</div>
+                <div class="card__number">9</div>
+                <!-- <div class="card__percent"><span> 77 </span> <span> % </span></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 my-2">
+        <div class="card card--income">
+            <div class="card__icon">
+                <img src="img/icons/card-income.svg" alt="">
+            </div>
+            <div class="card__info">
+                <div class="card__title">درآمدها</div>
+                <div class="card__number">960M</div>
+                <!-- <div class="card__percent"><span> 77 </span> <span> % </span></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 my-2">
+        <div class="card card--costs">
+            <div class="card__icon">
+                <img src="img/icons/card-costs.svg" alt="">
+            </div>
+            <div class="card__info">
+                <div class="card__title">هزینه‌ها</div>
+                <div class="card__number">125M</div>
+                <!-- <div class="card__percent"><span> 77 </span> <span> % </span></div> -->
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+<!-- ! top chart -->
+<div class="row">
+    <div class="col-12 mt-3">
+        <div class="box-bg income-chart">
+            <canvas class="income-chart-canvas"></canvas>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mt-3">
+        <div class="box-bg-action">
+            <div class="box-header">
+                <div class="d-flex">
+                    <div class="box-header-icon fas fa-times" title="بستن باکس"></div>
+                    <div class="box-header-icon fas fa-minus" title="کوچک کردن باکس"></div>
+                    <div class="box-header-title">آخرین پروژه‌ها</div>
+                </div>
+                <div class="fas fa-grip-horizontal box-header-icon--drag me-auto" title="جا به جایی باکس"></div>
+            </div>
+            <div class="box-body">
+                <canvas class="project-chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mt-3">
+        <div class="box-bg-action">
+            <div class="box-header">
+                <div class="d-flex">
+                    <div class="box-header-icon fas fa-times" title="بستن باکس"></div>
+                    <div class="box-header-icon fas fa-minus" title="کوچک کردن باکس"></div>
+                    <div class="box-header-title">تکنولوژی پروژه‌ها</div>
+                </div>
+                <div class="fas fa-grip-horizontal box-header-icon--drag me-auto" title="جا به جایی باکس"></div>
+            </div>
+            <div class="box-body">
+                <canvas class="tech-chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 mt-3">
+        <div class="box-bg-action">
+            <div class="box-header">
+                <div class="d-flex">
+                    <div class="box-header-icon fas fa-times" title="بستن باکس"></div>
+                    <div class="box-header-icon fas fa-minus" title="کوچک کردن باکس"></div>
+                    <div class="box-header-title">تقویم و رویدادها</div>
+                </div>
+                <div class="fas fa-grip-horizontal box-header-icon--drag me-auto" title="جا به جایی باکس"></div>
+            </div>
+            <div class="box-body pt-3">
+
+                <table id="cal1" class="calender">
+                    <caption>
+                        
+                        <select name="calender-select-year" class="calender-select-year">                               
+                            <option value="1391">1391</option>
+                            <option value="1392">1392</option>
+                            <option value="1393">1393</option>
+                            <option value="1394">1394</option>
+                            <option value="1395">1395</option>
+                            <option value="1396">1396</option>
+                            <option value="1397">1397</option>
+                            <option value="1398">1398</option>
+                            <option value="1399">1399</option>
+                            <option value="1400">1400</option>
+                            <option value="1401">1401</option>
+                            <option value="1402">1402</option>
+                        </select>
+                        
+                        <select name="calender-select-month" class="calender-select-month">
+                            <option value="0">فروردین</option>
+                            <option value="1">اردیبهشت</option>
+                            <option value="2">خرداد</option>
+                            <option value="3">تیر</option>
+                            <option value="4">مرداد</option>
+                            <option value="5">شهریور</option>
+                            <option value="6">مهر</option>
+                            <option value="7">آبان</option>
+                            <option value="8">آذر</option>
+                            <option value="9">دی</option>
+                            <option value="10">بهمن</option>
+                            <option value="11">اسفند</option>
+                        </select>
+                    </caption>
+                    
+                    <tr>
+                        <th>ش</th>
+                        <th>ی</th>
+                        <th>د</th>
+                        <th>س</th>
+                        <th>چ</th>
+                        <th>پ</th>
+                        <th>ج</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 mt-3">
+        <div class="box-bg-action">
+            <div class="box-header">
+                <div class="d-flex">
+                    <div class="box-header-icon fas fa-times" title="بستن باکس"></div>
+                    <div class="box-header-icon fas fa-minus" title="کوچک کردن باکس"></div>
+                    <div class="box-header-title">لیست کارها (ToDo List)</div>
+                </div>
+                <div class="fas fa-grip-horizontal box-header-icon--drag me-auto" title="جا به جایی باکس"></div>
+            </div>
+            <div class="box-body">
+                <div class="box-bg todo-list">
+
+                    <header>
+                        <div class="header-block">
+                            <span class="header-date-block">
+                                <div class="today"></div>
+                                <div class="date"></div>
+                            </span>
+                            <span class="clear fas fa-redo" title="clear all tasks"></span>
+                        </div>
+                    </header>
+                    <main>
+                        <div class="main-block">
+                            <ul class="list">
+
+                            </ul>
+                        </div>
+                    </main>
+                    <footer>
+                        <div class="footer-block">
+                            <span class="add-task fas fa-plus-circle"></span>
+                            <input type="text" class="input" placeholder="عنوان فعالیت جدید">
+                        </div>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mt-3">
+        <div class="box-bg">activities</div>
+    </div>
+
+    <div class="col-12 col-lg-6 mt-3">
+        <div class="box-bg">new contracts</div>
+    </div>
+</div>

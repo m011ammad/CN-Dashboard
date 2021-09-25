@@ -1,0 +1,10 @@
+// ! usigng _card.scss
+
+// ! charts
+.income-chart {
+    height: 350px;
+}
+.tech-chart, .project-chart {
+    min-height: 250px;
+    max-height: 250px;
+}

@@ -4122,8 +4122,13 @@
 
 @font-face {
   font-family: Vazir;
-  src: url("fonts/Vazir.woff2") format("woff2");
+  src: url("font/Vazir.woff2") format("woff2");
   font-weight: normal;
+}
+
+.fas {
+  font-size: 20px;
+  color: #444;
 }
 
 * {
@@ -4141,12 +4146,12 @@ body, html {
 
 body {
   background-color: #F5F7F9;
-  color: #555;
+  color: #444;
 }
 
 a, a:active, a:focus, a:visited {
   text-decoration: none;
-  color: #555;
+  color: #444;
 }
 
 ul li {
@@ -4162,31 +4167,6 @@ hr {
   border-bottom: 1px solid #ddd;
   margin-top: 3px;
   margin-bottom: 5px;
-}
-
-.section-info {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px 10px;
-  background-color: #999;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.section-info span {
-  padding-left: 10px;
-}
-
-/* ----- icons */
-.ic {
-  position: absolute;
-  font-size: 20px;
-  top: 14px;
-  right: 15px;
-  color: #555;
-  user-select: none;
 }
 
 body {
@@ -4216,6 +4196,7 @@ body {
   width: calc(100% - 250px);
   display: flex;
   flex-direction: column;
+  min-height: 120vh;
 }
 
 .left-side-active {
@@ -4242,6 +4223,11 @@ body {
 
 .right-side-inner ul a:hover {
   background-color: #f9f9f9;
+}
+
+.right-side-inner ul a:hover .fas {
+  color: #FF8552;
+  transition: color .3s;
 }
 
 .right-side-inner ul a.is-active {
@@ -4376,16 +4362,17 @@ body {
 .header .header__left input {
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 5px 35px 5px 10px;
+  padding: 7px 40px 7px 10px;
   background-color: transparent;
   width: 100%;
+  min-width: 250px;
   display: block;
 }
 
 .header .header__left button {
   position: absolute;
-  right: 5px;
-  top: 4px;
+  right: 10px;
+  top: 8px;
   background-color: transparent;
 }
 
@@ -4402,109 +4389,24 @@ body {
   background-color: #FF8552;
   position: absolute;
   border: 2px solid #f5f5f5;
-  top: 0;
-  right: -2px;
+  top: -5px;
+  right: -4px;
 }
 
 .left-main {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   margin: 10px auto;
   padding: 20px;
 }
 
-.banner-type-one {
-  padding: 25px 15px;
-  position: relative;
-  background-color: #297373;
-  border-radius: 10px;
+.income-chart {
+  height: 350px;
 }
 
-.banner-type-one * {
-  color: #f9f9f9;
-}
-
-.banner-type-one__button {
-  padding: 5px 15px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.banner-type-one__button:hover {
-  color: #fff;
-}
-
-.banner-type-one__button--accept {
-  background-color: #FF8552;
-  border: 1px solid #FF8552;
-}
-
-.banner-type-one__button--reject {
-  background-color: transparent;
-  border: 1px solid #f9f9f9;
-}
-
-.counter-box {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 100%;
-}
-
-.top-card {
-  margin: 0;
-}
-
-.top-card-number {
-  font-size: 28px;
-  font-weight: bold;
-  border-radius: 5px;
-  background-color: #FF8552;
-  color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0px;
-}
-
-.top-card-number > p {
-  text-align: center;
-}
-
-.top-chart-block {
-  height: 300px;
-}
-
-.banner-type-two {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  background: url("img/company.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.banner-type-two h2 {
-  font-size: 20px;
-  color: #f9f9f9;
-  text-align: center;
-  display: block;
-  background-color: #555;
-  padding: 5px 20px;
-  border-radius: 10px;
-}
-
-.banner-type-two button {
-  padding: 5px 10px;
-  background-color: #FF8552;
-  color: #f9f9f9;
-  margin-top: 20px;
-  border-radius: 10px;
+.tech-chart, .project-chart {
+  min-height: 250px;
+  max-height: 250px;
 }
 
 /*
@@ -4521,7 +4423,7 @@ body {
 }
 
 .tab__box .tab__items .tab__item {
-  color: #555;
+  color: #444;
   padding: 5px 10px;
   font-size: 13px;
   cursor: pointer;
@@ -4653,23 +4555,349 @@ body {
   transition: background-color 200ms;
 }
 
-.setting__title {
-  text-align: center;
-}
-
-.setting__profile-img {
-  width: 100%;
-}
-
-.setting__profile-img img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 20px auto;
+.card {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
   border-radius: 10px;
 }
 
-.fas {
+.card .card__icon {
+  width: 40%;
+  height: auto;
+  background-color: #FF8552;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card .card__icon img {
+  width: 60%;
+  display: block;
+  margin: auto;
+  filter: brightness(100);
+}
+
+.card .card__info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .card__info .card__title {
   font-size: 20px;
-  color: #555;
+  color: #888;
+}
+
+.card .card__info .card__number {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 5px auto;
+}
+
+.card .card__info .card__number::after {
+  content: '+ ';
+}
+
+.card .card__info .card__percent {
+  font-size: 26px;
+}
+
+.card .card__info .card__percent span:nth-child(2) {
+  font-size: 32px;
+}
+
+.card--contract .card__icon,
+.card--costs .card__icon {
+  background-color: #297373 !important;
+}
+
+.box-bg {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box-border {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box-bg-action {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box-bg-action .box-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.box-bg-action .box-header .box-header-icon {
+  margin-left: 15px;
+}
+
+.box-bg-action .box-header .box-header-icon:hover {
+  cursor: pointer;
+  color: #FF8552;
+}
+
+.box-bg-action .box-header .box-header-icon--drag {
+  cursor: move;
+}
+
+.banner-type-one {
+  padding: 25px 15px;
+  position: relative;
+  background-color: #297373;
+  border-radius: 10px;
+}
+
+.banner-type-one * {
+  color: #f9f9f9;
+}
+
+.banner-type-one__button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.banner-type-one__button:hover {
+  color: #fff;
+}
+
+.banner-type-one__button--accept {
+  background-color: #FF8552;
+  border: 1px solid #FF8552;
+}
+
+.banner-type-one__button--reject {
+  background-color: transparent;
+  border: 1px solid #f9f9f9;
+}
+
+.banner-type-two {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background: url("img/company.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.banner-type-two h2 {
+  font-size: 20px;
+  color: #f9f9f9;
+  text-align: center;
+  display: block;
+  background-color: #555;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.banner-type-two button {
+  padding: 5px 10px;
+  background-color: #FF8552;
+  color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+table.calender {
+  width: 100% !important;
+  border-spacing: 10px;
+}
+
+table.calender caption {
+  text-align: right;
+}
+
+table.calender th, table.calender td {
+  text-align: center;
+}
+
+table.calender th {
+  font-size: 15px;
+  padding-bottom: 10px;
+  color: #888;
+}
+
+table.calender td {
+  padding: 5px 0px;
+  border-radius: 10px;
+}
+
+table.calender td:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+table.calender td.dayoff {
+  background-color: #fdefee;
+  color: #C62828 !important;
+}
+
+.calender-select-year,
+.calender-select-month {
+  border: 1px solid #ccc;
+  min-width: 60px;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+.todo-list {
+  direction: rtl;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.todo-list .header-block {
+  height: 70px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  margin-top: auto;
+  align-items: center;
+}
+
+.todo-list .header-block .clear {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #444;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+.todo-list .header-block .clear:hover {
+  background-color: #FF8552;
+}
+
+.todo-list .main-block {
+  overflow-y: auto;
+  height: calc(350px - 122px);
+}
+
+.todo-list .main-block::-webkit-scrollbar {
+  width: 5px;
+}
+
+.todo-list .main-block::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.todo-list .main-block::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+}
+
+.todo-list .main-block .list-empty {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.todo-list .main-block .list-empty .empty-title {
+  text-align: center;
+}
+
+.todo-list .main-block .list-empty img {
+  display: block;
+  margin: 10px auto;
+  margin-top: 40px;
+  max-width: 150px;
+}
+
+.todo-list .main-block li {
+  padding: 15px 0px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list .main-block li .item-done {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.todo-list .main-block li .item-text {
+  font-size: 16px;
+}
+
+.todo-list .main-block li .item-delete {
+  margin-right: auto;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.todo-list .main-block li .item-delete:hover {
+  color: #C62828;
+}
+
+.todo-list footer {
+  margin-top: auto;
+}
+
+.todo-list .footer-block {
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  border: 1px solid #ccc;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.todo-list .footer-block .add-task {
+  font-size: 32px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.todo-list .footer-block .add-task:hover {
+  color: #FF8552;
+}
+
+.todo-list .footer-block input {
+  border: none;
+  padding: 0px 10px;
+  background-color: transparent;
+  width: 100%;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    max-width: 100%;
+    height: 100vh;
+  }
+  body .header-block {
+    border-radius: 0px;
+  }
+  body .main-block {
+    height: calc(100vh - 145px);
+  }
+  body .footer-block {
+    margin-top: auto;
+    border-radius: 0;
+  }
 }

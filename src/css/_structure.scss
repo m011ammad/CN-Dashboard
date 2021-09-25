@@ -27,6 +27,7 @@ body {
     width: calc(100% - 250px);
     display: flex;
     flex-direction: column;
+    min-height: 120vh;
 }
 .left-side-active {
     width: calc(100% - 60px);

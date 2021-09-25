@@ -1,0 +1,52 @@
+// + using box-bg
+.card {
+    display: flex;
+    background-color: $bg-l-hover;
+    padding: 10px;
+    border-radius: $border-radius;
+    .card__icon {
+        width: 40%;
+        height: auto;
+        background-color: #FF8552;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 60%;
+            display: block;
+            margin: auto;
+            filter: brightness(100);
+        }
+    }
+    .card__info {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .card__title {
+            font-size: 20px;
+            color: $text-d-mute;
+        }
+        .card__number {
+            font-size: 28px;
+            font-weight: 900;
+            margin: 5px auto;
+            &::after {
+                content: '+ ';
+            }
+        }
+        .card__percent {
+            font-size: 26px;
+            span:nth-child(2) {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.card--contract .card__icon,
+.card--costs .card__icon {
+    background-color: $secondary-color !important;
+}

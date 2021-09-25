@@ -1,0 +1,31 @@
+.box-bg {
+    background-color: $bg-l-hover;
+    border-radius: $border-radius;
+    padding: 10px;
+}
+.box-border {
+    border: $border;
+    border-radius: $border-radius;
+    padding: 10px;
+}
+.box-bg-action {
+    background-color: $bg-l-hover;
+    border-radius: $border-radius;
+    padding: 10px;
+    .box-header {
+        display: flex;
+        flex-direction: row;
+        border-bottom: $border;
+        padding-bottom: 10px;
+        .box-header-icon {
+            margin-left: 15px;
+            &:hover {
+                cursor: pointer;
+                color: $primary-color;
+            }
+        }
+        .box-header-icon--drag {
+            cursor: move;
+        }
+    }
+}

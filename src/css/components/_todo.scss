@@ -1,0 +1,127 @@
+.todo-list {
+    direction: rtl;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    .header-block {
+        height: 70px;
+        display: flex;
+        border-bottom: $border;
+        justify-content: space-between;
+        margin-top: auto;
+        align-items: center;
+        .clear {
+            padding: 10px;
+            border-radius: 50%;
+            border: $border;
+            color: $text-d;
+            cursor: pointer;
+            transition: background-color .5s;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+    .main-block {
+        overflow-y: auto;
+        height: calc(350px - 122px);
+        // change scrollbar
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #bbb;
+        }
+        .list-empty {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+            flex-direction: column;
+            .empty-title {
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin: 10px auto;
+                margin-top: 40px;
+                max-width: 150px;
+            }
+        }
+
+        li {
+            padding: 15px 0px;
+            border-bottom: 1px solid#ddd;
+            display: flex;
+            align-items: center;
+            
+            .item-done {
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            .item-text {
+                font-size: 16px;
+            }
+            .item-delete {
+                margin-right: auto;
+                cursor: pointer;
+                transition: color .3s;
+                &:hover {
+                    color: $error-color; 
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: auto;
+    }
+    .footer-block {
+        height: 50px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        border: $border;
+        align-items: center;
+        border-radius: $border-radius;
+        .add-task {
+            font-size: 32px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: color .3s;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        input {
+            border: none;
+            padding: 0px 10px;
+            background-color: transparent;
+            // border-bottom: 1px solid $text-l;
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        max-width: 100%;
+        height: 100vh;
+        .header-block {
+            border-radius: 0px;
+        }
+        .main-block {
+            height: calc(100vh - 145px);
+        }
+        .footer-block {
+            margin-top: auto;
+            border-radius: 0;
+        }
+    }
+}

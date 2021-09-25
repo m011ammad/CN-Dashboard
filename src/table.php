@@ -19,7 +19,7 @@
         <main>
             <div class="container-fluid">
                 <div class="left-main">
-                    <?php include 'inc/left-main__table.html' ?>
+                    <?php include 'inc/left-main/table.html' ?>
                 </div>
             </div>
         </main>
@@ -33,6 +33,9 @@
 </body>
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+<script src="js/colors.js"></script>
+<script src="js/dom-change.js"></script>
+<script src="js/charts.js"></script>
 
 </html>
