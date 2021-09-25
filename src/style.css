@@ -4834,7 +4834,7 @@ table.calender td.dayoff {
 .todo-list .main-block .list-empty {
   display: flex;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   flex-direction: column;
 }
 
@@ -4845,8 +4845,8 @@ table.calender td.dayoff {
 .todo-list .main-block .list-empty img {
   display: block;
   margin: 10px auto;
-  margin-top: 40px;
-  max-width: 150px;
+  margin-top: 20px;
+  width: 50px;
 }
 
 .todo-list .main-block li {

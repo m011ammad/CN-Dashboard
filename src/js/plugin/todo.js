@@ -178,8 +178,8 @@ list.addEventListener("click", (e) => {
 // ! add text and image if list is empty
 if (dataList.length == 0) {
   const emptyList = ` <div class="list-empty">
-                        <span class="empty-title">لیست کارهای شما خالی است!</س>
-                        <!-- <img src="../img/to-do-list.svg" alt="empty list"> -->
+                        <span class="empty-title">لیست کارهای شما خالی است.</span>
+                        <img src="img/to-do-list.svg" alt="empty list">
                     </div>`;
   list.insertAdjacentHTML("beforeend", emptyList);
 }

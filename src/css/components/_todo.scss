@@ -40,7 +40,7 @@
         .list-empty {
             display: flex;
             width: 100%;
-            margin-top: 50px;
+            margin-top: 20px;
             flex-direction: column;
             .empty-title {
                 text-align: center;
@@ -48,8 +48,8 @@
             img {
                 display: block;
                 margin: 10px auto;
-                margin-top: 40px;
-                max-width: 150px;
+                margin-top: 20px;
+                width: 50px;
             }
         }
 
