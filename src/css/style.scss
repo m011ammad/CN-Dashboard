@@ -21,14 +21,16 @@
 @import 'left-main/_setting';
 
 // components
+@import 'components/_button';
 @import 'components/_card';
 @import 'components/_box';
 @import 'components/_banners';
 @import 'components/_tabs';
 @import 'components/_accordion';
+@import 'components/_modal';
 
 // plugin
 @import 'plugin/_calender';
 
 // to-do list
-@import 'components/_todo.scss'
+@import 'components/_todo.scss';
