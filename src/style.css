@@ -4915,6 +4915,38 @@ body {
   display: flex;
 }
 
+.toast-block {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #FF8552;
+  z-index: 999;
+}
+
+@media screen and (max-width: 760px) {
+  .toast-block {
+    right: 0px;
+  }
+}
+
+.toast-block .toast-close {
+  cursor: pointer;
+}
+
+.toast-block .toast-bell-icon {
+  color: #FF8552;
+  font-size: 28px;
+}
+
 table.calender {
   width: 100% !important;
   border-spacing: 10px;

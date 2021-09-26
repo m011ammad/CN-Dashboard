@@ -1,0 +1,26 @@
+.toast-block {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px 15px;
+    background-color: $bg-l;
+    border-radius: $border-radius;
+    border: 1px solid $primary-color;
+    z-index: 999;
+    @media screen and (max-width: 760px) {
+        right: 0px;
+    }
+    .toast-close {
+        cursor: pointer;
+    }
+    .toast-bell-icon {
+        color: $primary-color;
+        font-size: 28px;
+    }
+}
