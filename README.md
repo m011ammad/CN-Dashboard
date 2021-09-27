@@ -4,7 +4,7 @@ This template only uses the Bootstrap-Gird system(version 5).\
 the default language of this template is persian and based CN direction, But it can be easily changed.
 
 ## Theme Demo
-![CN-Dashboard](https://github.com/m011ammad/CN-Dashboard/blob/main/src/img/sc.png?raw=true"CN-Dashboard")
+![CN-Dashboard](https://github.com/m011ammad/CN-Dashboard/blob/main/src/img/screenshot.png)
 
 ## how to run?
 clone and change the desire parts.\
