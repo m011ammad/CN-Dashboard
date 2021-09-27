@@ -4,3 +4,12 @@
     margin: 10px auto;
     padding: 20px;
 }
+
+// used for section title to show components
+.guide-section-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: $border;
+}
