@@ -4924,7 +4924,7 @@ body {
   display: none;
   align-items: center;
   justify-content: flex-start;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   width: 100%;
