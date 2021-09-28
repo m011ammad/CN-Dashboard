@@ -4400,6 +4400,12 @@ body {
   padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .left-main {
+    padding: 10px 0px;
+  }
+}
+
 .guide-section-title {
   font-size: 16px;
   font-weight: 900;
@@ -4438,34 +4444,40 @@ body {
 .cn-table {
   width: 100%;
   overflow-x: auto;
+}
+
+.cn-table table {
   border-spacing: 0px;
+  width: 100%;
 }
 
-.cn-table th, .cn-table td {
-  padding: 7px 0px;
+.cn-table table th, .cn-table table td {
   text-align: right;
+  min-width: 50px;
+  white-space: nowrap;
+  padding: 10px;
 }
 
-.cn-table th {
+.cn-table table th {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-.cn-table .cn-table-action span:nth-child(1),
-.cn-table .cn-table-action span:nth-child(2) {
+.cn-table table .cn-table-action span:nth-child(1),
+.cn-table table .cn-table-action span:nth-child(2) {
   font-size: 14px;
   cursor: pointer;
 }
 
-.cn-table .cn-table-action span:nth-child(1) {
+.cn-table table .cn-table-action span:nth-child(1) {
   margin-right: auto;
 }
 
-.cn-table .cn-table-action span:nth-child(1):hover {
+.cn-table table .cn-table-action span:nth-child(1):hover {
   color: #C62828;
 }
 
-.cn-table .cn-table-action span:nth-child(2) {
+.cn-table table .cn-table-action span:nth-child(2) {
   margin-right: 10px;
 }
 
