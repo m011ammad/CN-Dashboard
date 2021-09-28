@@ -8,6 +8,7 @@ body {
     width: 250px;
     height: auto;
     overflow-y: auto;
+    z-index: 999;
     .right-side-inner {
         width: inherit;
         // border-radius: 20px 0 0 20px;
@@ -31,4 +32,24 @@ body {
 }
 .left-side-active {
     width: calc(100% - 60px);
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-bg-cover {
+        position: fixed;
+        display: none;
+        background-color: rgba(0,0,0,.6);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 998;
+    }
+    .right-side-inner {
+        box-shadow: 0 0 0 !important;
+    }
+    .display-activator {
+        display: block !important;
+    }
 }

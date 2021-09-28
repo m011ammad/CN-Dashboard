@@ -8,6 +8,8 @@
 
     <div class="left-side">
 
+        <div class="mobile-bg-cover"></div>
+
         <header>
             <div class="container-fluid ">
                 <div class="row header">

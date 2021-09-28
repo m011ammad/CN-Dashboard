@@ -4178,6 +4178,7 @@ body {
   width: 250px;
   height: auto;
   overflow-y: auto;
+  z-index: 999;
 }
 
 .right-side .right-side-inner {
@@ -4201,6 +4202,26 @@ body {
 
 .left-side-active {
   width: calc(100% - 60px);
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-bg-cover {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+  }
+  .right-side-inner {
+    box-shadow: 0 0 0 !important;
+  }
+  .display-activator {
+    display: block !important;
+  }
 }
 
 .right-side-inner ul a {
@@ -4391,6 +4412,15 @@ body {
   border: 2px solid #f5f5f5;
   top: -5px;
   right: -4px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__left {
+    padding-left: 0px;
+  }
+  .header__right {
+    padding-right: 0px;
+  }
 }
 
 .left-main {

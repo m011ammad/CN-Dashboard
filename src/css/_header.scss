@@ -67,3 +67,12 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header__left {
+        padding-left: 0px;
+    }
+    .header__right {
+        padding-right: 0px;
+    }
+}
